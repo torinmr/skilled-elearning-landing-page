@@ -39,6 +39,7 @@
   @media (min-width: $desktop-width) {
     width: 40%;
     height: 40vw;
+    max-height: 40em;
   }
 }
 
@@ -54,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     width: 70vw;
+    max-width: 70em;
     bottom: 0;
     left: calc(8em - 10vw);
   }

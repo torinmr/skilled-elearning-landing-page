@@ -1,0 +1,11 @@
+.top-nav {
+  margin: 1em var(--horizontal-margin);
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 2.5em auto 1em;
+    max-width: var(--max-content-width);
+  }
+}

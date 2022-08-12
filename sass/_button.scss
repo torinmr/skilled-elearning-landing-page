@@ -1,0 +1,46 @@
+.button {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75;
+  color: var(--white);
+  background-color: var(--dark-purple);
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border-radius: 1.75em;
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.125rem;
+    line-height: 1.555;
+  }
+
+  &:hover {
+    background-image: var(--gray-transparency);
+  }
+}
+
+.button--large {
+  padding: 1em 2.375em;
+  border-radius: 2em;
+
+  @media (min-width: $desktop-width) {
+    padding: 1em 1.78em;
+  }
+}
+
+.button--cta-primary {
+  background-image: var(--cta-gradient);
+
+  &:hover {
+    background-image: var(--gray-transparency), var(--cta-gradient);
+  }
+}
+
+.button--cta-secondary {
+  background-image: var(--cta-secondary-gradient);
+
+  &:hover {
+    background-image: var(--gray-transparency), var(--cta-secondary-gradient);
+  }
+}

@@ -1,5 +1,27 @@
+$tablet-width: 48em;
+$desktop-width: 75em;
+
 :root {
   box-sizing: border-box;
+
+  --muted-purple: #666ca3;
+  --dark-purple: #13183f;
+  --medium-gray: #83869a;
+  --vivid-pink: #f74780;
+  --light-pink: #ffa7c3;
+  --white: #ffffff;
+  --background-white: #f2f2f2;
+  --background-gradient: linear-gradient(to bottom, var(--background-white), #f0f1ff);
+  --cta-gradient: linear-gradient(to bottom, #f02aa6, #ff6f48);
+  --cta-secondary-gradient: linear-gradient(to bottom, #4851ff, #f02aa6);
+  --gray-transparency: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+
+  --horizontal-margin: 1em;
+  @media (min-width: $tablet-width) {
+    --horizontal-margin: 2.5em;
+  }
+
+  --max-content-width: 70em;
 }
 
 *,
@@ -11,4 +33,49 @@
 body {
   margin: 0;
   font-size: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--background-white);
 }
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--dark-purple);
+}
+
+h1 {
+  font-size: 2.5rem;
+
+  @media (min-width: $desktop-width) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  line-height: 1.625;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--medium-gray);
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.555;
+    font-size: 1.125rem;
+  }
+}
+

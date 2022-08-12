@@ -7,29 +7,41 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body>
 <nav class="top-nav">
-  <a class="home-link" href="/"><img src="assets/logo-dark.svg" alt="skilled"/></a>
+  <a href="/" class="home-link"><img src="assets/logo-dark.svg" alt="skilled"/></a>
   <a class="button" href="/get-started">Get started</a>
 </nav>
-<main>
-  <div class="hero">
-    <div class="hero__content">
-      <h1>Maximize skill, minimize budget</h1>
-      <p>
-        Our modern courses across a range of in-demand skills will give you the
-        knowledge you need to live the life you want.
-      </p>
-      <a class="button button--cta-primary">Get started</a>
-    </div>
-    <div class="hero__image">
-      <img src="assets/image-hero-mobile.png"
-           alt="Woman drinking coffee, excited about learning"/>
-    </div>
+<aside class="hero">
+  <div class="hero__content">
+    <h1>Maximize skill, minimize budget</h1>
+    <p>
+      Our modern courses across a range of in-demand skills will give you the
+      knowledge you need to live the life you want.
+    </p>
+    <a class="button button--cta-primary button--large">Get started</a>
   </div>
-  <div class="main">
+  <div class="hero__image">
+    <picture>
+      <source media="(max-width: 435px)" srcset="assets/image-hero-mobile.webp">
+      <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.webp">
+      <source media="(max-width: 868px)" srcset="assets/image-hero-tablet.webp">
+      <source media="(max-width: 1199px)" srcset="assets/image-hero-tablet@2x.webp">
+      <source srcset="assets/image-hero-desktop.webp">
+      <img src="assets/image-hero-mobile.webp"
+           alt="Woman drinking coffee, excited about learning"/>
+    </picture>
+  </div>
+</aside>
+<main class="main-content">
+  <div class="tile-container">
     <div class="tile tile--featured">
       <h2>Check out our most popular courses!</h2>
     </div>
@@ -81,7 +93,7 @@
   </div>
 </main>
 <footer class="footer">
-  <a class="home-link" href="/"><img src="assets/logo-light.svg" alt="skilled"/></a>
+  <a href="/" class="home-link"><img src="assets/logo-light.svg" alt="skilled"/></a>
   <a class="button button--cta-secondary" href="/get-started">Get started</a>
 </footer>
 </body>

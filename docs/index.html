@@ -16,37 +16,40 @@
 </head>
 <body>
 <nav class="top-nav">
-  <a href="/" class="home-link"><img src="assets/logo-dark.svg" alt="skilled"/></a>
-  <a class="button" href="/get-started">Get started</a>
+  <div class="inner-container">
+    <a href="/" class="home-link"><img src="assets/logo-dark.svg" alt="skilled"/></a>
+    <a class="button" href="/get-started">Get started</a>
+  </div>
 </nav>
 <aside class="hero">
-  <div class="hero__content">
-    <h1>Maximize skill, minimize budget</h1>
-    <p>
-      Our modern courses across a range of in-demand skills will give you the
-      knowledge you need to live the life you want.
-    </p>
-    <a class="button button--cta-primary button--large">Get started</a>
-  </div>
-  <div class="hero__image">
-    <picture>
-      <source media="(max-width: 435px)" srcset="assets/image-hero-mobile.webp">
-      <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.webp">
-      <source media="(max-width: 868px)" srcset="assets/image-hero-tablet.webp">
-      <source media="(max-width: 1199px)" srcset="assets/image-hero-tablet@2x.webp">
-      <source srcset="assets/image-hero-desktop.webp">
-      <img src="assets/image-hero-mobile.webp"
-           alt="Woman drinking coffee, excited about learning"/>
-    </picture>
-  </div>
+  <div class="inner-container">
+    <div class="hero__text">
+      <h1>Maximize skill, minimize budget</h1>
+      <p>
+        Our modern courses across a range of in-demand skills will give you the
+        knowledge you need to live the life you want.
+      </p>
+      <a class="button button--cta-primary button--large">Get started</a>
+    </div>
+    <div class="hero__image">
+      <picture>
+        <source media="(max-width: 435px)" srcset="assets/image-hero-mobile.png">
+        <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.png">
+        <source media="(max-width: 868px)" srcset="assets/image-hero-tablet.png">
+        <source media="(max-width: 1199px)" srcset="assets/image-hero-tablet@2x.png">
+        <source srcset="assets/image-hero-desktop.png">
+        <img src="assets/image-hero-mobile.png"
+             alt="Woman drinking coffee, excited about learning"/>
+      </picture>
+    </div>
 </aside>
-<main class="main-content">
-  <div class="tile-container">
+<main class="main">
+  <div class="tile-container inner-container">
     <div class="tile tile--featured">
       <h2>Check out our most popular courses!</h2>
     </div>
     <div class="tile">
-      <img src="assets/icon-animation.svg" alt="Icon of running figure"/>
+      <img class="tile__icon" src="assets/icon-animation.svg" alt="Icon of running figure"/>
       <h4>Animation</h4>
       <p>
         Learn the latest animation techniques to create stunning motion
@@ -55,7 +58,7 @@
       <a class="link" href="/courses/animation">Get started</a>
     </div>
     <div class="tile">
-      <img src="assets/icon-design.svg" alt="Icon with contrasting pyramid"/>
+      <img class="tile__icon" src="assets/icon-design.svg" alt="Icon with contrasting pyramid"/>
       <h4>Design</h4>
       <p>
         Create beautiful, usable interfaces to help shape the future of
@@ -64,7 +67,7 @@
       <a class="link" href="/courses/design">Get started</a>
     </div>
     <div class="tile">
-      <img src="assets/icon-photography.svg" alt="Camera icon"/>
+      <img class="tile__icon" src="assets/icon-photography.svg" alt="Camera icon"/>
       <h4>Photography</h4>
       <p>
         Explore critical fundamentals like lighting, composition, and focus
@@ -73,7 +76,7 @@
       <a class="link" href="/courses/photography">Get started</a>
     </div>
     <div class="tile">
-      <img src="assets/icon-crypto.svg" alt="Black and white grid"/>
+      <img class="tile__icon" src="assets/icon-crypto.svg" alt="Black and white grid"/>
       <h4>Crypto</h4>
       <p>
         All you need to know to get started investing in crypto. Go from beginner
@@ -82,7 +85,7 @@
       <a class="link" href="/courses/crypto">Get started</a>
     </div>
     <div class="tile">
-      <img src="assets/icon-business.svg" alt="Briefcase icon"/>
+      <img class="tile__icon" src="assets/icon-business.svg" alt="Briefcase icon"/>
       <h4>Business</h4>
       <p>
         A step-by-step playbook to help you start, scale, and sustain your business
@@ -93,8 +96,10 @@
   </div>
 </main>
 <footer class="footer">
-  <a href="/" class="home-link"><img src="assets/logo-light.svg" alt="skilled"/></a>
-  <a class="button button--cta-secondary" href="/get-started">Get started</a>
+  <div class="inner-container">
+    <a href="/" class="home-link"><img src="assets/logo-light.svg" alt="skilled"/></a>
+    <a class="button button--cta-secondary" href="/get-started">Get started</a>
+  </div>
 </footer>
 </body>
 </html>

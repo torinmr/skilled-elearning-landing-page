@@ -4,4 +4,9 @@
 
 .home-link img {
   align-self: center;
+  width: 5.625em;
+
+  @media (min-width: $desktop-width) {
+    width: 7.125em;
+  }
 }

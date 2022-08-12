@@ -3,6 +3,7 @@ $desktop-width: 75em;
 
 :root {
   box-sizing: border-box;
+  overflow-x: hidden;
 
   --muted-purple: #666ca3;
   --dark-purple: #13183f;
@@ -10,18 +11,11 @@ $desktop-width: 75em;
   --vivid-pink: #f74780;
   --light-pink: #ffa7c3;
   --white: #ffffff;
-  --background-white: #f2f2f2;
+  --background-white: #ffffff;
   --background-gradient: linear-gradient(to bottom, var(--background-white), #f0f1ff);
-  --cta-gradient: linear-gradient(to bottom, #f02aa6, #ff6f48);
+  --cta-gradient: linear-gradient(to bottom, #ff6f48, #f02aa6);
   --cta-secondary-gradient: linear-gradient(to bottom, #4851ff, #f02aa6);
   --gray-transparency: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-
-  --horizontal-margin: 1em;
-  @media (min-width: $tablet-width) {
-    --horizontal-margin: 2.5em;
-  }
-
-  --max-content-width: 70em;
 }
 
 *,

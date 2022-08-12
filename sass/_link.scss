@@ -1,0 +1,20 @@
+.link {
+  text-decoration: none;
+  color: var(--vivid-pink);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.555;
+}
+
+.link:visited {
+
+}
+
+.link:hover {
+  color: var(--light-pink);
+}
+
+.link:active {
+  color: var(--vivid-pink);
+}

@@ -1,62 +1,60 @@
 .hero {
-  margin: 2.5em var(--horizontal-margin) 0;
+  padding-top: 2.375em;
+}
 
+.hero > .inner-container {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--max-content-width);
-  }
 }
 
-.hero__content {
+.hero__text {
   @media (min-width: $tablet-width) {
+    margin-top: 2em;
     width: calc(20em + 10vw);
   }
   @media (min-width: $desktop-width) {
-    margin-top: 5em;
+    margin-top: 6em;
     width: 45%
   }
 }
 
-.hero__content p {
+.hero__text h1 {
+  margin-top: 0;
+}
+
+.hero__text p {
   margin: 1.5em 0;
 }
 
 .hero__image {
-  margin-top: 2.875em;
+  margin-top: 2em;
 
   @media (min-width: $tablet-width) {
-    height: 45vw;
-    width: 40%;
+    height: 28em;
+    width: 20em;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    width: 40%;
-    height: 40vw;
-    max-height: 40em;
+    height: 38em;
+    width: 31em;
   }
 }
 
 .hero__image img {
-  width: 100%;
+  width: 130%;
+  margin-left: -15%;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: -10vw;
-    left: -2em;
-    width: 80vw;
+    bottom: 0;
+    left: 0;
+    width: 38em;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70vw;
-    max-width: 70em;
-    bottom: 0;
-    left: calc(8em - 10vw);
+    width: 60em;
   }
 }
